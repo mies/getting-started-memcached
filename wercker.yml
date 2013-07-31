@@ -12,5 +12,6 @@ build:
     - script:
         name: echo python information
         code: |
+          python test.py
           echo "python version $(python --version) running"
           echo "pip version $(pip --version) running"
