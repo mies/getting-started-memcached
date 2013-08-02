@@ -10,3 +10,6 @@ print bad_keys
 print sorted(bad_keys) == ['bar', 'foo']
 print 'set_multi({0!r}) -> {1!r}'.format(mapping, bad_keys)
 
+client.set("some_key", "Some value")
+value = client.get("some_key")
+print value
